@@ -16,6 +16,6 @@ echo "Installing phpcs"
 cd $HOME
 composer global require drupal/coder
 composer global update drupal/coder --prefer-source
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
-echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> .bashrc
-phpcs --config-set installed_paths $HOME/.config/composer/vendor/drupal/coder/coder_sniffer
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> .bashrc
+phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer
